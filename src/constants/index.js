@@ -35,6 +35,18 @@ export const navLinks = [
     title: "Work",
   },
   {
+    id: "projects",
+    title: "Projects",
+  },
+  {
+    id: "achievements",
+    title: "Achievements",
+  },
+  {
+    id: "testimonials",
+    title: "Testimonials",
+  },
+  {
     id: "contact",
     title: "Contact",
   },
@@ -42,7 +54,7 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Web Developer",
+    title: "React/NextJs Developer",
     icon: web,
   },
   {
@@ -50,7 +62,7 @@ const services = [
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Backend Developer (ExpressJS)",
     icon: backend,
   },
   {
@@ -114,152 +126,283 @@ const technologies = [
   },
 ];
 
+const projects = [
+  {
+    id: 1,
+    title: "NJP - Bangladesh's National Job Portal",
+    des: "Built the NJP project using Next.js, React, Tailwind, GSAP, Framer Motion, Redux Toolkit, and RTK Query. Enhances job search and recruitment in Bangladesh.",
+    img: "/assets/njp.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/redux.svg"],
+    link: "",
+  },
+  {
+    id: 2,
+    title: "Convay - Online Collaborative Meeting Hub",
+    des: "Created Convay's frontend using React, TypeScript, Tailwind, GSAP, Redux Toolkit, RTK Query, Framer Motion, and Acertinity UI. It's a super seamless platform for online meetings.",
+    img: "/assets/convay.png",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    link: "https://convay.com/",
+  },
+  {
+    id: 3,
+    title: "e-Return - Bangladesh's National Tax Return Submission",
+    des: "Developed e-Return's frontend with Angular, TypeScript, Material UI Components, and jQuery. Simplifies the national tax return submission process in Bangladesh.",
+    img: "/assets/e-Return.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/fm.svg"],
+    link: "https://etaxnbr.gov.bd/#/auth/sign-in",
+  },
+  {
+    id: 4,
+    title: "Xoomsports - Ultimate Football Score & League Hub",
+    des: "Developed Xoomsports frontend with Next.js, React, Tailwind CSS, Material Components, Redux, Redux Toolkit, and Formik. It provides comprehensive football scores and league details.",
+    img: "/assets/xoomsports.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/fm.svg"],
+    link: "https://www.xoomsports.com/",
+  },
+];
+
 const experiences = [
   {
     title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    company_name: "Synesis IT PLC",
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    image: "/assets/companies/synesis.png",
+    date: "Nov 2023 - Now",
+    pointSection: [
+      {
+        id: 1,
+        point_name: "Convay (Online Meeting Platform)",
+        points: [
+          "Implemented immersive recording feature.",
+          "Developed user pinning for enhanced interaction",
+          "Integrated invitation links for seamless meeting access.",
+        ],
+      },
+      {
+        id: 2,
+        point_name: "National Job Portal (NJP)",
+        points: [
+          "Designed dynamic resume creation features.",
+          "Integrated an AI-driven proctorial model for secure exams.",
+          "Enabled seamless job application and exam processes.",
+          "Developed features for automatic shortlisting and exam control for employers.",
+        ],
+      },
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
+    title: "React / React Native Developer",
+    company_name: "Root Devs",
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    image: "/assets/companies/rootdevs.png",
+    date: "May 2023 - Nov 2023",
+    pointSection: [
+      {
+        id: 1,
+        point_name: "XoomSports (Online sport Platform)",
+        points: [
+          "Developed the admin and frontend for XoomSport, a sports streaming platform.",
+          "Showcased Full-Stack Development skills using React, Next.js, Redux Toolkit, Node, Express, Prisma, MongoDB, Tailwind CSS, Zustand, and React Query",
+          "Integrated realtime score, match update, custom play urls.",
+        ],
+      },
     ],
   },
   {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+    title: "Full Stack Developer",
+    company_name: "Mighty Byte",
+    iconBg: "#383E56",
+    image: "/assets/companies/mighty.png",
+    date: "Sept 2021 - Sept 2022",
+    pointSection: [
+      {
+        id: 1,
+        point_name: "Unleashing Innovation Across Various Endeavors",
+        points: [
+          "Developed mujib100.gov.bd as a Frontend Developer, collaborating with cross-functional teams.",
+          "Created a range of UI components for a component library.",
+          "Maintained websites for corporate clients such as Orion Home Appliances Ltd, EverCare Bangladesh, and Kaalmegh.",
+        ],
+      },
     ],
   },
 ];
+
+const achievements = [
+  {
+    id: 1,
+    title: "Watson Accelerator Global Winner - 2019",
+    thumbnail: "/assets/achievements/watson.jpg",
+  },
+  {
+    id: 2,
+    title: "BYLC Venture Winner - 2020",
+    thumbnail: "/assets/achievements/bylc.jpg",
+  },
+  {
+    id: 3,
+    title: "Emerging Leader Award - 2021",
+    thumbnail: "/assets/achievements/aspire.jpg",
+  },
+  {
+    id: 4,
+    title: "Banglalink SDG Hackathon - 2022",
+    thumbnail: "/assets/achievements/banglalink.jpg",
+  },
+  {
+    id: 5,
+    title: "CTO Forum Hackathon - 2022",
+    thumbnail: "/assets/achievements/cto.jpg",
+  },
+  {
+    id: 6,
+    title: "Nasa Space App Challenge - 2023",
+    thumbnail: "/assets/achievements/nasa.jpg",
+  },
+];
+
+// const experiences = [
+//   {
+//     title: "React.js Developer",
+//     company_name: "Synesis IT PLC",
+//     icon: starbucks,
+//     iconBg: "#383E56",
+//     date: "Nov 2023 - Now",
+//     points: [
+//       "Developing and maintaining web applications using React.js and other related technologies.",
+//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//       "Implementing responsive design and ensuring cross-browser compatibility.",
+//       "Participating in code reviews and providing constructive feedback to other developers.",
+//     ],
+//   },
+//   {
+//     title: "React / React Native Developer",
+//     company_name: "Root Devs",
+//     image: "/assets/companies/rootdevs.png",
+//     date: "May 2023 - Nov 2023",
+//     points: [
+//       "Developing and maintaining web applications using React.js and other related technologies.",
+//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//       "Implementing responsive design and ensuring cross-browser compatibility.",
+//       "Participating in code reviews and providing constructive feedback to other developers.",
+//     ],
+//   },
+//   {
+//     title: "Full Stack Developer",
+//     company_name: "Mighty Byte",
+//     image: "/assets/companies/mighty.png",
+//     date: "Sept 2021 - Sept 2022",
+//     points: [
+//       "Developing and maintaining web applications using React.js and other related technologies.",
+//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+//       "Implementing responsive design and ensuring cross-browser compatibility.",
+//       "Participating in code reviews and providing constructive feedback to other developers.",
+//     ],
+//   },
+// ];
 
 const testimonials = [
   {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+    quote:
+      "Redwan joined Rootdevs and was assigned our flagship product, Xoomsports, for development. He, along with three other team members, completed the project ahead of the deadline. Redwan took full ownership and responsibility for the project, adding numerous features beyond our initial promise. He is a wonderful person to work with and his dedication is truly commendable.",
+    name: "Elias Khan",
+    image: "/assets/clients/ek.png",
+    title: "Founder and CEO, RootDevs",
   },
   {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+    quote:
+      "Redwan joined me in the middle of developing the largest national site, 'MUJIB-100'. His contributions were immediate and impactful. Redwan is a very hardworking individual, and I was extremely happy to work with him. His ability to integrate seamlessly into ongoing projects is remarkable.",
+    name: "Ajaz Khan",
+    image: "/assets/clients/ajaz.png",
+    title: "Ex-Director, Mighty Byte",
   },
   {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+    quote:
+      "Redwan, being my university junior and a colleague at SynesisIT, was assigned a production-ready product called 'Convay,' one of our flagship online meeting platforms. He worked very efficiently on the development of seamless calling and recording features. His dedication and skill in ensuring the product's success were outstanding.",
+    name: "Moinul Islam",
+    image: "/assets/clients/moinul.png",
+    title: "Head of Development, Synesis IT",
+  },
+  {
+    quote:
+      "When I assigned Redwan one of Bangladesh's biggest national sites, 'NJP - National Job Portal,' he worked tirelessly to meet the deadline, even sacrificing his weekends. It was a pleasure to work with him. His commitment to delivering high-quality work under tight deadlines is truly admirable.",
+    name: "Sazidur Rahman",
+    image: "/assets/clients/sazid.png",
+    title: "Analyst Programmer & Team Lead, SynesisIT",
   },
 ];
 
-const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
+// const projects = [
+//   {
+//     name: "Car Rent",
+//     description:
+//       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "mongodb",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "tailwind",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: carrent,
+//     source_code_link: "https://github.com/",
+//   },
+//   {
+//     name: "Job IT",
+//     description:
+//       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+//     tags: [
+//       {
+//         name: "react",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "restapi",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "scss",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: jobit,
+//     source_code_link: "https://github.com/",
+//   },
+//   {
+//     name: "Trip Guide",
+//     description:
+//       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+//     tags: [
+//       {
+//         name: "nextjs",
+//         color: "blue-text-gradient",
+//       },
+//       {
+//         name: "supabase",
+//         color: "green-text-gradient",
+//       },
+//       {
+//         name: "css",
+//         color: "pink-text-gradient",
+//       },
+//     ],
+//     image: tripguide,
+//     source_code_link: "https://github.com/",
+//   },
+// ];
 
-export { services, technologies, experiences, testimonials, projects };
+export {
+  services,
+  technologies,
+  experiences,
+  testimonials,
+  projects,
+  achievements,
+};

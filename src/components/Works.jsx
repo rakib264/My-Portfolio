@@ -8,77 +8,22 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ProjectCard = ({
-  index,
-  name,
-  description,
-  tags,
-  image,
-  source_code_link,
-}) => {
-  return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
-      >
-        <div className='relative w-full h-[230px]'>
-          <img
-            src={image}
-            alt='project_image'
-            className='w-full h-full object-cover rounded-2xl'
-          />
+import { FaLocationArrow } from "react-icons/fa6";
 
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
-            <div
-              onClick={() => window.open(source_code_link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
-            >
-              <img
-                src={github}
-                alt='source code'
-                className='w-1/2 h-1/2 object-contain'
-              />
-            </div>
-          </div>
-        </div>
-
-        <div className='mt-5'>
-          <h3 className='text-white font-bold text-[24px]'>{name}</h3>
-          <p className='mt-2 text-secondary text-[14px]'>{description}</p>
-        </div>
-
-        <div className='mt-4 flex flex-wrap gap-2'>
-          {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
-              #{tag.name}
-            </p>
-          ))}
-        </div>
-      </Tilt>
-    </motion.div>
-  );
-};
+import { PinContainer } from "./ui/Pin";
 
 const Works = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={`${styles.sectionSubText} `}>My work</p>
-        <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
+        <p className={`${styles.sectionSubText} `}>Spotlight on </p>
+        <h2 className={`${styles.sectionHeadText}`}>My Recent Projects.</h2>
       </motion.div>
 
-      <div className='w-full flex'>
+      <div className="w-full flex">
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
+          className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
           real-world examples of my work. Each project is briefly described with
@@ -88,13 +33,84 @@ const Works = () => {
         </motion.p>
       </div>
 
-      <div className='mt-20 flex flex-wrap gap-7'>
-        {projects.map((project, index) => (
-          <ProjectCard key={`project-${index}`} index={index} {...project} />
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16 md:gap-20 mt-10">
+        {projects.map((item) => (
+          <div
+            className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
+            key={item.id}
+          >
+            <PinContainer
+              title={item.link}
+              href="https://twitter.com/mannupaaji"
+            >
+              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+                <div
+                  className="relative w-full h-full overflow-hidden lg:rounded-3xl"
+                  style={{ backgroundColor: "#13162D" }}
+                >
+                  <img src="/bg.png" alt="bgimg" />
+                </div>
+                <img
+                  src={item.img}
+                  alt="cover"
+                  className="z-10 absolute bottom-0"
+                />
+              </div>
+
+              <h1 className="font-bold md:text-xl text-base line-clamp-2">
+                {item.title}
+              </h1>
+
+              <p
+                className="lg:text-md lg:font-normal font-light text-sm line-clamp-3"
+                style={{
+                  color: "#BEC1DD",
+                  margin: "1vh 0",
+                }}
+              >
+                {item.des}
+              </p>
+
+              <div className="flex items-center justify-between mt-7 mb-3">
+                <div className="flex items-center">
+                  {item.iconLists.map((icon, index) => (
+                    <div
+                      key={index}
+                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      style={{
+                        transform: `translateX(-${5 * index + 2}px)`,
+                      }}
+                    >
+                      <img src={icon} alt="icon5" className="p-2" />
+                    </div>
+                  ))}
+                </div>
+
+                <div className="">
+                  {item.link !== "" ? (
+                    <div className="flex justify-center items-center">
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        className="flex lg:text-xl md:text-xs text-sm text-purple"
+                      >
+                        Check Live Site
+                      </a>
+                      <FaLocationArrow className="ms-3" color="#CBACF9" />
+                    </div>
+                  ) : (
+                    <p className="flex lg:text-xl md:text-xs text-sm text-purple">
+                      Under Development
+                    </p>
+                  )}
+                </div>
+              </div>
+            </PinContainer>
+          </div>
         ))}
       </div>
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
