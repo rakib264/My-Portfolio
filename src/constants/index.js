@@ -132,7 +132,7 @@ const projects = [
     title: "NJP - Bangladesh's National Job Portal",
     des: "Built the NJP project using Next.js, React, Tailwind, GSAP, Framer Motion, Redux Toolkit, and RTK Query. Enhances job search and recruitment in Bangladesh.",
     img: "/assets/njp.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/redux.svg"],
+    iconLists: ["/re.svg", "/next.svg", "/tail.svg", "/ts.svg", "/redux.svg"],
     link: "",
   },
   {
@@ -140,7 +140,7 @@ const projects = [
     title: "Convay - Online Collaborative Meeting Hub",
     des: "Created Convay's frontend using React, TypeScript, Tailwind, GSAP, Redux Toolkit, RTK Query, Framer Motion, and Acertinity UI. It's a super seamless platform for online meetings.",
     img: "/assets/convay.png",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
     link: "https://convay.com/",
   },
   {
@@ -148,7 +148,13 @@ const projects = [
     title: "e-Return - Bangladesh's National Tax Return Submission",
     des: "Developed e-Return's frontend with Angular, TypeScript, Material UI Components, and jQuery. Simplifies the national tax return submission process in Bangladesh.",
     img: "/assets/e-Return.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/fm.svg"],
+    iconLists: [
+      "/next.svg",
+      "/tail.svg",
+      "/ts.svg",
+      "/stream.svg",
+      "/three.svg",
+    ],
     link: "https://etaxnbr.gov.bd/#/auth/sign-in",
   },
   {
@@ -156,7 +162,7 @@ const projects = [
     title: "Xoomsports - Ultimate Football Score & League Hub",
     des: "Developed Xoomsports frontend with Next.js, React, Tailwind CSS, Material Components, Redux, Redux Toolkit, and Formik. It provides comprehensive football scores and league details.",
     img: "/assets/xoomsports.png",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/fm.svg"],
+    iconLists: ["/next.svg", "/re.svg", "/tail.svg", "/ts.svg", "/stream.svg"],
     link: "https://www.xoomsports.com/",
   },
 ];
@@ -261,46 +267,6 @@ const achievements = [
   },
 ];
 
-// const experiences = [
-//   {
-//     title: "React.js Developer",
-//     company_name: "Synesis IT PLC",
-//     icon: starbucks,
-//     iconBg: "#383E56",
-//     date: "Nov 2023 - Now",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "React / React Native Developer",
-//     company_name: "Root Devs",
-//     image: "/assets/companies/rootdevs.png",
-//     date: "May 2023 - Nov 2023",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-//   {
-//     title: "Full Stack Developer",
-//     company_name: "Mighty Byte",
-//     image: "/assets/companies/mighty.png",
-//     date: "Sept 2021 - Sept 2022",
-//     points: [
-//       "Developing and maintaining web applications using React.js and other related technologies.",
-//       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//       "Implementing responsive design and ensuring cross-browser compatibility.",
-//       "Participating in code reviews and providing constructive feedback to other developers.",
-//     ],
-//   },
-// ];
-
 const testimonials = [
   {
     quote:
@@ -331,72 +297,6 @@ const testimonials = [
     title: "Analyst Programmer & Team Lead, SynesisIT",
   },
 ];
-
-// const projects = [
-//   {
-//     name: "Car Rent",
-//     description:
-//       "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-//     tags: [
-//       {
-//         name: "react",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "mongodb",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "tailwind",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: carrent,
-//     source_code_link: "https://github.com/",
-//   },
-//   {
-//     name: "Job IT",
-//     description:
-//       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-//     tags: [
-//       {
-//         name: "react",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "restapi",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "scss",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: jobit,
-//     source_code_link: "https://github.com/",
-//   },
-//   {
-//     name: "Trip Guide",
-//     description:
-//       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-//     tags: [
-//       {
-//         name: "nextjs",
-//         color: "blue-text-gradient",
-//       },
-//       {
-//         name: "supabase",
-//         color: "green-text-gradient",
-//       },
-//       {
-//         name: "css",
-//         color: "pink-text-gradient",
-//       },
-//     ],
-//     image: tripguide,
-//     source_code_link: "https://github.com/",
-//   },
-// ];
 
 export {
   services,
