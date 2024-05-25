@@ -149,8 +149,8 @@ const projects = [
     des: "Developed e-Return's frontend with Angular, TypeScript, Material UI Components, and jQuery. Simplifies the national tax return submission process in Bangladesh.",
     img: "/assets/e-Return.png",
     iconLists: [
-      "/next.svg",
-      "/tail.svg",
+      "/angular.svg",
+      "/material.svg",
       "/ts.svg",
       "/stream.svg",
       "/three.svg",
